@@ -9,7 +9,6 @@
 <body>
     <div class="container">
         <h1>Edit Anime</h1>
-        <?php if(isset($anime) && is_array($anime)): ?>
             <form method="POST" action="/tugasakhir1/Public/index.php?action=edit&id=<?= $anime['id']; ?>">
                 <div class="form-group">
                     <label>Nama Anime:</label>
@@ -34,10 +33,6 @@
                 <button type="submit" class="btn-submit">Update</button>
                 <a href="/tugasakhir1/Public/index.php?action=index" class="btn-cancel">Batal</a>
             </form>
-        <?php else: ?>
-            <p>Data anime tidak ditemukan.</p>
-            <a href="/tugasakhir1/Public/index.php?action=index" class="btn-cancel">Kembali</a>
-        <?php endif; ?>
     </div>
 </body>
 </html>
