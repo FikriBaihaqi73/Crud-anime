@@ -56,4 +56,12 @@ class AnimeController {
         }
     }
 
+    public function search() {
+        if (isset($_POST['keyword'])) {
+            $keyword = $_POST['keyword'];
+            $animes = $this->model->searchAnime($keyword);
+            require_once '../Views/anime/index.php';
+        }
+    }
+
 }

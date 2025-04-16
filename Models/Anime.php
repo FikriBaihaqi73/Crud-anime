@@ -51,4 +51,18 @@ class Anime {
         $stmt->bindParam(':id', $id);
         return $stmt->execute();
     }
+
+    public function searchAnime($keyword) {
+        $query = "SELECT * FROM anime 
+                    WHERE 
+                    nama LIKE :keyword OR
+                    tahun LIKE :keyword OR
+                    studio LIKE :keyword OR
+                    mangaka LIKE :keyword OR
+                    genre LIKE :keyword"; 
+        $stmt = $this->db->prepare($query);
+        $stmt->bindValue(':keyword', "%$keyword%");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

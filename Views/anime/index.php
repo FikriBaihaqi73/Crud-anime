@@ -12,6 +12,16 @@
         <a href="/tugasakhir1/Public/index.php?action=create" class="btn-add">Tambah Anime</a>
     </div>
 
+    <div class="container">
+        <form method="POST" action="/tugasakhir1/Public/index.php?action=search">
+            <input type="text" name="keyword" placeholder="Cari anime" class="search-input" value="<?= isset($_POST['keyword']) ? $_POST['keyword'] : ''; ?>">
+            <button type="submit" class="search-button">Cari</button>
+            <?php if (isset($_POST['keyword'])) : ?>
+                <a href="/tugasakhir1/Public/index.php?action=index" class="search-button-cancel">Batal</a>
+            <?php endif; ?>
+        </form>
+    </div>
+
     <table>
         <thead>
             <tr>
