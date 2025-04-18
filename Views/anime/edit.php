@@ -36,11 +36,5 @@
             </div>
         </div>
     </div>
-    
-    <!-- Sparkle Effects -->
-    <div class="sparkle sparkle-1"></div>
-    <div class="sparkle sparkle-2"></div>
-    <div class="sparkle sparkle-3"></div>
-    <div class="sparkle sparkle-4"></div>
 </body>
 </html>
