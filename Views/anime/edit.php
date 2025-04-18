@@ -11,10 +11,15 @@
         <h1>Modify Magical Anime Scroll</h1>
         
         <div class="spellbook-container floating">
-            <div class="book">
-                <div class="book-cover"></div>
-                <div class="book-pages"></div>
-                <div class="book-content">
+    <div class="magic-sparkle sparkle-1"></div>
+    <div class="magic-sparkle sparkle-2"></div>
+    <div class="magic-sparkle sparkle-3"></div>
+    <div class="magic-sparkle sparkle-4"></div>
+    <div class="magic-sparkle sparkle-5"></div>
+    <div class="book">
+        <div class="book-cover"></div>
+        <div class="book-pages"></div>
+        <div class="book-content">
                     <form class="magic-form" method="POST" action="/tugasakhir1/Public/index.php?action=edit&id=<?= $anime['id']; ?>">
                         <h2 class="form-title">Alter Magical Properties</h2>
                         
