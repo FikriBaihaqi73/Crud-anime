@@ -9,7 +9,19 @@
 <body>
     <div class="container">
         <h1>Daftar Anime</h1>
-        <a href="/tugasakhir1/Public/index.php?action=create" class="btn-add">Tambah Anime</a>
+       <!-- From Uiverse.io by Navarog21 --> 
+<a href="/tugasakhir1/Public/index.php?action=create" class="button">
+    Tambah Anime
+    <div id="clip">
+        <div id="leftTop" class="corner"></div>
+        <div id="rightBottom" class="corner"></div>
+        <div id="rightTop" class="corner"></div>
+        <div id="leftBottom" class="corner"></div>
+    </div>
+    <span id="rightArrow" class="arrow"></span>
+    <span id="leftArrow" class="arrow"></span>
+</a>
+
     </div>
 
     <div class="container">
