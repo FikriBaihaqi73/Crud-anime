@@ -511,7 +511,6 @@ tr:hover {
 }
 
 .magic-add-button::after {
-    content: '+';
     position: absolute;
     right: 15px;
     top: 50%;
